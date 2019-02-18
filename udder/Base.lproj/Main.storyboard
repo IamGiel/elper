@@ -18,22 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szj-gq-Kdn">
-                                <rect key="frame" x="128" y="64" width="119" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Putting skills to use..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urV-mj-ZuB">
+                                <rect key="frame" x="106" y="158" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="m9D-Jf-Wqz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="xBA-Th-UgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Putting skills to use..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urV-mj-ZuB">
-                                <rect key="frame" x="111" y="158" width="163" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helping-hands" translatesAutoresizingMaskIntoConstraints="NO" id="wzl-Ws-yZb">
+                                <rect key="frame" x="0.0" y="529" width="375" height="138"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szj-gq-Kdn">
+                                <rect key="frame" x="128" y="64" width="119" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="WPE-J4-eoo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="mfq-Qi-Qpg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wzl-Ws-yZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Nw-Lf-hl3"/>
+                            <constraint firstItem="szj-gq-Kdn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5IT-Ez-y5W"/>
+                            <constraint firstItem="wzl-Ws-yZb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8bt-tN-DHR"/>
+                            <constraint firstItem="urV-mj-ZuB" firstAttribute="top" secondItem="szj-gq-Kdn" secondAttribute="bottom" constant="21" id="MDj-MA-PnT"/>
+                            <constraint firstItem="szj-gq-Kdn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="SSS-9a-YeX"/>
+                            <constraint firstItem="wzl-Ws-yZb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W63-gG-SML"/>
+                            <constraint firstItem="urV-mj-ZuB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vT5-0F-6Aa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -42,4 +60,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="helping-hands" width="326" height="138"/>
+    </resources>
 </document>
